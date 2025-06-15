@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
+  <url>
+    <loc>https://marcenariabinho.netlify.app/</loc>
+    <geo:geo>
+      <geo:format>kml</geo:format>
+      <geo:location>Curitiba, Brasil</geo:location>
+    </geo:geo>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
