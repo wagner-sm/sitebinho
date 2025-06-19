@@ -1,4 +1,4 @@
 atualizar_site.bat
 comandos.txt
-dist/
+dist
 node_modules/
