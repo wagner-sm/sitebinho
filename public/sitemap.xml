@@ -3,7 +3,7 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
   <url>
-    <loc>https://marcenariabinho.netlify.app/</loc>
+    <loc>https://marcenariabinho.com.br/</loc>
     <geo:geo>
       <geo:format>kml</geo:format>
       <geo:location>Curitiba, Brasil</geo:location>
