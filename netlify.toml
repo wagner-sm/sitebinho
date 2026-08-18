@@ -1,0 +1,10 @@
+[build]
+base = "site"
+command = "npm run build"
+publish = "dist"
+
+[[redirects]]
+from = "https://marcenariabinho.netlify.app/*"
+to = "https://marcenariabinho.com.br/:splat"
+status = 301
+force = true
