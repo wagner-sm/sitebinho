@@ -238,7 +238,20 @@ body {
 /* ---------- Responsive ---------- */
 
 @media (max-width: 720px) {
-  .service-grid {
-    grid-template-columns: 1fr;
+  .section-title {
+    font-size: 2.4rem;
+  }
+
+  .section-lede {
+    font-size: 1rem;
+  }
+
+  .footer-name {
+    font-size: 1.4rem;
+  }
+
+  .footer-meta,
+  .footer-contact {
+    font-size: 0.95rem;
   }
 }
