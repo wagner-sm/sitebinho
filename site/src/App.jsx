@@ -11,7 +11,6 @@ import {
   LuPaintRoller,
   LuMapPin,
   LuPhone,
-  LuMessageCircle,
 } from 'react-icons/lu'
 
 const PHONE_DISPLAY = '(41) 98816-2571'
@@ -103,12 +102,6 @@ export default function App() {
     <div className="page">
       <header className="hero">
         <img className="hero-img" src="images/hero.webp" alt="Móvel em restauração na marcenaria" />
-        <div className="hero-cta">
-          <a className="btn btn-banner" href={PHONE_LINK} target="_blank" rel="noopener noreferrer">
-            <LuMessageCircle aria-hidden="true" />
-            Falar no WhatsApp
-          </a>
-        </div>
         <h1 className="visually-hidden">
           Transforme seus móveis e seu ambiente
         </h1>
