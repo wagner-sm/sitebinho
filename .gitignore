@@ -4,3 +4,6 @@ site/node_modules/
 site/dist/
 dist/
 node_modules/
+.impeccable/
+.playwright-mcp/
+*.log
