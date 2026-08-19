@@ -133,7 +133,7 @@ body {
   margin: 0 0 2.5rem;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+  font-size: clamp(3.4rem, 7vw, 5.5rem);
   line-height: 1.1;
   text-transform: uppercase;
   text-align: center;
@@ -142,88 +142,9 @@ body {
 
 .section-lede {
   margin: -1.5rem 0 2.5rem;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
   text-align: center;
   color: var(--text-muted);
-}
-
-/* ---------- Services ---------- */
-
-.services {
-  padding: var(--section-pad) 0;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.25rem;
-}
-
-.service-card {
-  background: var(--cream-bright);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 1.6rem 1.5rem 1.5rem;
-  box-shadow: 0 1px 2px rgba(40, 45, 28, 0.05), 0 10px 26px rgba(40, 45, 28, 0.08);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(109, 77, 48, 0.5);
-  box-shadow: 0 2px 4px rgba(40, 45, 28, 0.05), 0 18px 34px rgba(40, 45, 28, 0.12);
-}
-
-.service-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 10px;
-  background: var(--wood);
-  color: var(--cream);
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  overflow: hidden;
-}
-
-.service-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.service-card h3 {
-  margin: 0 0 0.4rem;
-  font-size: 1.06rem;
-  font-weight: 700;
-  line-height: 1.3;
-  color: var(--text);
-}
-
-.service-card p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-/* ---------- Contact Banner ---------- */
-
-.contact-banner {
-  background: var(--ink);
-  padding: var(--section-pad) 0;
-}
-
-.contact-banner a {
-  display: block;
-}
-
-.contact-banner img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 20px 46px rgba(0, 0, 0, 0.45);
 }
 
 /* ---------- Gallery ---------- */
@@ -272,7 +193,7 @@ body {
   margin: 0 0 0.5rem;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 1.35rem;
+  font-size: clamp(1.6rem, 3vw, 2rem);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -281,7 +202,7 @@ body {
   margin: 0 auto 1.75rem;
   max-width: 46ch;
   color: var(--on-ink-muted);
-  font-size: 0.95rem;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
 }
 
 .footer-contact {
@@ -290,7 +211,7 @@ body {
   flex-wrap: wrap;
   gap: 0.5rem 2.25rem;
   margin-bottom: 2.25rem;
-  font-size: 0.98rem;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
 }
 
 .footer-contact a {
