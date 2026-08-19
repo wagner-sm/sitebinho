@@ -1,4 +1,4 @@
-import { LuDroplets, LuMapPin, LuPhone } from 'react-icons/lu'
+import { LuMapPin, LuPhone } from 'react-icons/lu'
 
 const PHONE_DISPLAY = '(41) 98816-2571'
 const PHONE_LINK = 'https://wa.me/5541988162571'
@@ -26,7 +26,8 @@ const SERVICES = [
     text: 'Acabamento sofisticado e de alta durabilidade.',
   },
   {
-    icon: LuDroplets,
+    src: 'images/icones/verniz.jpg',
+    alt: 'Ícone de verniz',
     title: 'Verniz',
     text: 'Proteção e realce da beleza da madeira.',
   },
