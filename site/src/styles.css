@@ -239,19 +239,19 @@ body {
 
 @media (max-width: 720px) {
   .section-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .section-lede {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .footer-name {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 
   .footer-meta,
   .footer-contact {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
   }
 }
