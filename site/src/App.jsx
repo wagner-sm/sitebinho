@@ -1,17 +1,4 @@
-import {
-  LuHammer,
-  LuPaintbrush,
-  LuSprayCan,
-  LuDroplets,
-  LuLayers,
-  LuSparkles,
-  LuPalette,
-  LuWrench,
-  LuHouse,
-  LuPaintRoller,
-  LuMapPin,
-  LuPhone,
-} from 'react-icons/lu'
+import { LuDroplets, LuMapPin, LuPhone } from 'react-icons/lu'
 
 const PHONE_DISPLAY = '(41) 98816-2571'
 const PHONE_LINK = 'https://wa.me/5541988162571'
@@ -21,17 +8,20 @@ const MAPS_LINK =
 
 const SERVICES = [
   {
-    icon: LuHammer,
+    src: 'images/icones/restauracao.png',
+    alt: 'Ícone de restauração de móveis',
     title: 'Restauração e Pinturas de Móveis',
     text: 'Devolvemos a vida e a beleza dos seus móveis.',
   },
   {
-    icon: LuPaintbrush,
+    src: 'images/icones/patinas.png',
+    alt: 'Ícone de patinas',
     title: 'Patinas',
     text: 'Acabamentos exclusivos com efeito envelhecido.',
   },
   {
-    icon: LuSprayCan,
+    src: 'images/icones/lacas.png',
+    alt: 'Ícone de lacas',
     title: 'Lacas',
     text: 'Acabamento sofisticado e de alta durabilidade.',
   },
@@ -41,17 +31,20 @@ const SERVICES = [
     text: 'Proteção e realce da beleza da madeira.',
   },
   {
-    icon: LuLayers,
+    src: 'images/icones/selador.png',
+    alt: 'Ícone de selador',
     title: 'Selador',
     text: 'Prepara e protege a superfície para um acabamento perfeito.',
   },
   {
-    icon: LuSparkles,
+    src: 'images/icones/encerados.png',
+    alt: 'Ícone de encerados',
     title: 'Encerados',
     text: 'Brilho natural e proteção com acabamento fino.',
   },
   {
-    icon: LuPalette,
+    src: 'images/icones/coloridos.png',
+    alt: 'Ícone de coloridos',
     title: 'Coloridos',
     text: 'Dá cor e personalidade aos seus móveis.',
   },
@@ -59,22 +52,26 @@ const SERVICES = [
 
 const MORE_SERVICES = [
   {
-    icon: LuWrench,
+    src: 'images/icones/montagem.png',
+    alt: 'Ícone de montagem e desmontagem de móveis',
     title: 'Montagem e Desmontagem de Móveis',
     text: 'Praticidade e cuidado na montagem e desmontagem.',
   },
   {
-    icon: LuHammer,
+    src: 'images/icones/concertos.png',
+    alt: 'Ícone de concertos',
     title: 'Concertos',
     text: 'Soluções eficientes para problemas em seus móveis.',
   },
   {
-    icon: LuHouse,
+    src: 'images/icones/pequenos.png',
+    alt: 'Ícone de pequenos reparos',
     title: 'Pequenos Reparos em Casas e Apartamentos',
     text: 'Reparos rápidos e com qualidade que fazem a diferença.',
   },
   {
-    icon: LuPaintRoller,
+    src: 'images/icones/pinturas.png',
+    alt: 'Ícone de pinturas de paredes',
     title: 'Pinturas de Paredes',
     text: 'Acabamento impecável para renovar seus ambientes.',
   },
@@ -85,11 +82,11 @@ const PHOTOS = Array.from({ length: 15 }, (_, i) => ({
   alt: `Móvel restaurado ${i + 1}`,
 }))
 
-function ServiceCard({ icon: Icon, title, text }) {
+function ServiceCard({ icon: Icon, src, alt, title, text }) {
   return (
     <article className="service-card">
       <span className="service-icon" aria-hidden="true">
-        <Icon />
+        {src ? <img src={src} alt="" /> : <Icon />}
       </span>
       <h3>{title}</h3>
       <p>{text}</p>
