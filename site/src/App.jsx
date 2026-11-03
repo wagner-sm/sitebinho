@@ -58,11 +58,9 @@ export default function App() {
       <header className="hero">
         <img
           className="hero-img"
-          src="/images/banner.jpg"
+          src="images/banner.jpg"
           alt="Binho Restauração de Móveis: restauração, pintura, pátinas, lacas e acabamentos para móveis"
           fetchPriority="high"
-          width="1024"
-          height="2048"
         />
       </header>
 
@@ -111,7 +109,7 @@ export default function App() {
             <div className="gallery-grid">
               {PHOTOS.map((p) => (
                 <figure className="gallery-item" key={p.src}>
-                  <img src={`/${p.src}`} alt={p.alt} loading="lazy" decoding="async" width="640" height="480" />
+                  <img src={p.src} alt={p.alt} loading="lazy" />
                 </figure>
               ))}
             </div>
