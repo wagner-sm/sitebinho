@@ -255,3 +255,112 @@ body {
     font-size: 0.88rem;
   }
 }
+
+/* ---------- SEO content / services ---------- */
+.services {
+  padding: clamp(3.5rem, 8vw, 6rem) 0;
+  background: var(--cream-bright);
+}
+
+.eyebrow {
+  margin: 0 0 0.7rem;
+  color: var(--wood);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services .section-title {
+  max-width: 900px;
+  margin: 0 auto 1.25rem;
+  font-size: clamp(2.35rem, 5vw, 4.25rem);
+}
+
+.services-intro {
+  max-width: 780px;
+  margin: 0 auto 2.5rem;
+  color: var(--text-muted);
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.service-item {
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.38);
+}
+
+.service-item h3 {
+  margin: 0 0 0.55rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.service-item p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.services-cta {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.services-cta p {
+  margin: 0 0 1rem;
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--on-ink);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.18s ease, transform 0.18s ease;
+}
+
+.contact-button:hover {
+  background: var(--wood-deep);
+  transform: translateY(-1px);
+}
+
+.contact-button svg {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 850px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item {
+    padding: 1.1rem;
+  }
+}
